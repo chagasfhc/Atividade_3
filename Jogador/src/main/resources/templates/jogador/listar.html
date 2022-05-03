@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Listar Jogador</title>
+</head>
+	<body>
+		<div>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container-fluid">
+				<a class="navbar-brand" href="https://fucturatecnologia.com.br">Fuctura</a>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				  <div class="navbar-nav">
+					<a class="nav-link active" aria-current="page" href="#">Home</a>
+					<a class="nav-link" href="/jogador/cadastrar">Cadastrar</a>
+					<a class="nav-link" href="/jogador/listar">Listar</a>
+					<a class="nav-link" href="/jogador/atualizar">Atualizar</a>
+					<a class="nav-link" href="/jogador/remover">Excluir</a>
+				  </div>
+				</div>
+			  </div>
+			</nav>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col col-md-3" th:each="jogador : ${jogadores}">
+					<div>
+						<p>Nome: <span th:text=${jogador.nome}>???</span></p>
+						<p>Idade:<span th:text=${jogador.idade}>???</span></p>
+						<p>Altura:<span th:text=${jogador.altura}>???</span></p>
+						<p>Peso:<span th:text=${jogador.peso}>???</span></p>
+						<p>Posição:<span th:text=${jogador.posicao}>???</span></p>
+						<img th:src=${jogador.img}> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

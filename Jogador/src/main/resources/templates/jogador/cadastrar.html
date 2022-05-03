@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cadastrar Jogador</title>
+</head>
+	<body>
+		<div>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container-fluid">
+				<a class="navbar-brand" href="https://fucturatecnologia.com.br">Fuctura</a>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				  <div class="navbar-nav">
+					<a class="nav-link active" aria-current="page" href="#">Home</a>
+					<a class="nav-link" href="/jogador/cadastrar">Cadastrar</a>
+					<a class="nav-link" href="/jogador/listar">Listar</a>
+					<a class="nav-link" href="/jogador/atualizar">Atualizar</a>
+					<a class="nav-link" href="/jogador/remover">Excluir</a>
+				  </div>
+				</div>
+			  </div>
+			</nav>
+		</div>
+	
+	
+		<div>
+			<form action="/jogador/cadastrar" method="post">
+	
+				<h1>
+				<label for="nome">Nome:</label>
+				<input type="text" id="nome" name="nome">
+				<h1>
+				<label for="idade">Idade:</label>
+				<input type="text" id="idade" name="idade">
+				<h1>
+				<label for="altura">Altura:</label>
+				<input type="text" id="altura" name="altura">
+				<h1>
+				<label for="peso">Peso:</label>
+				<input type="text" id="peso" name="peso">
+				<h1>
+				<label for="posicao">Posição:</label>
+					<select id="posicao" name="posicao">
+						<option value="G">Goleiro</option>
+						<option value="Z">Zageiro</option>
+						<option value="L">Lateral</option>
+						<option value="V">Volante</option>
+						<option value="A">Ala</option>
+						<option value="M">Meio Campo</option>
+						<option value="MC">Meia central</option>
+						<option value="ML">Meia Lateral</option>
+						<option value="MA">Meia Atacante</option>
+						<option value="P">Ponta</option>
+						<option value="AT">Atacante</option>
+					</select>
+				<h1>IMG:
+				<label for="img">IMG:</label>
+				<input type="text" id="img" name="img">
+				<h1>
+				<input type="submit" value="Enviar cadastro">
+	
+			</form>
+		</div>
+	
+	</body>
+</html>
